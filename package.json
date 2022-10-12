@@ -1,12 +1,12 @@
 {
-  "name": "goit-markup-project-group-5-test",
+  "name": "goit-markup-project-group-5",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://MateuszPiszczatowski.github.io/goit-markup-project-group-5-test",
+  "homepage": "https://MateuszPiszczatowski.github.io/goit-markup-project-group-5",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-markup-project-group-5-test/"
+    "build": "parcel build src/*.html --public-url /goit-markup-project-group-5/"
   },
   "repository": {
     "type": "git",
