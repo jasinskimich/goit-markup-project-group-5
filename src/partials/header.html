@@ -1,0 +1,90 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__elements">
+      <div class="header__links">
+        <a href="" class="header__logo">
+          <div class="logo">
+            <span class="logo--style1">Hell</span>
+            <svg class="logo--style2" width="22" height="30">
+              <use xlink:href="./images/sprite.svg#icon-flame"></use>
+            </svg>
+            <span class="logo--style3">en</span>
+          </div>
+          <div class="logo--bottom">
+            <span class="logo--style4">hellish </span><span class="logo--style1">english</span>
+          </div>
+        </a>
+        <nav class="header__nav">
+          <a href="#program" class="header__nav--style">Studying program</a>
+          <a href="#about" class="header__nav--style">about</a>
+          <a href="#training" class="header__nav--style">training options</a>
+          <a href="#contacts" class="header__nav--style">contacts</a>
+        </nav>
+      </div>
+      <button type="button" class="button__form" data-modal-open>consultation by phone</button>
+      <button
+        type="button"
+        class="button__menu js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="button__menu--style" width="25" height="12">
+          <use xlink:href="./images/sprite.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button type="button" class="mobile-menu--close-button js-close-menu">
+      <svg class="modal__button--close" width="15" height="16">
+        <use xlink:href="./images/sprite.svg#icon-check-mark"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__logo">
+      <a href="" class="header__logo">
+        <div class="logo">
+          <span class="mobile-menu__logo--style1">Hell</span>
+          <svg class="logo--style2" width="22" height="30">
+            <use xlink:href="./images/sprite.svg#icon-flame"></use>
+          </svg>
+          <span class="mobile-menu__logo--style2">en</span>
+        </div>
+        <div class="logo--bottom">
+          <span class="logo--style4">hellish </span
+          ><span class="mobile-menu__logo--style1">english</span>
+        </div>
+      </a>
+    </div>
+    <nav class="mobile-menu__nav-box">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-item--style" href="#program">Studying program</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-item--style" href="#about">About</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-item--style" href="#training">Training options</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-item--style" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__button-box">
+      <button type="button" class="mobile-menu__button" data-modal-open1>
+        consultation by phone
+      </button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close></button>
+    </div>
+  </div>
+  <div class="backdrop is-hidden1" data-modal1>
+    <div class="modal">
+      <button type="button" data-modal-close1></button>
+    </div>
+  </div>
+</header>
