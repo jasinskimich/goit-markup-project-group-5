@@ -103,39 +103,29 @@
 
 @media all and (min-width: vars.getThreshold('desktop')) {
   .problems {
-    padding: 0;
+    padding: 76px 134px 0;
     height: 700px;
-    background: linear-gradient(
-      to bottom,
-      vars.getColor('primary') 0,
-      vars.getColor('primary') 426px,
-      #fff 426px
-    );
-    position: relative;
-  }
-  .problems__background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 76px;
-    width: 100vw;
-    height: 426px;
-    background-image: url('../images/flame.svg');
-    background-size: 339px 472px;
-    background-position: calc(50vw + 330px) 68px;
+
+    background: url('../images/flame.svg'),
+      linear-gradient(
+        to bottom,
+        vars.getColor('primary') 0,
+        vars.getColor('primary') 426px,
+        #fff 426px
+      );
+    background-size: 343px 358px, 100% 100%;
+    background-position: calc(50vw + 320px) 68px, 0% 0%;
     background-repeat: no-repeat;
   }
   .problems__title {
     width: 1001px;
+
     margin-bottom: 60px;
     font-weight: 800;
     font-size: 35px;
     line-height: 1.3;
   }
   .problems__list {
-    position: absolute;
-    left: calc(50vw - 500px);
-    top: 256px;
     font-size: 15px;
     line-height: 1.4;
     width: 1001px;
