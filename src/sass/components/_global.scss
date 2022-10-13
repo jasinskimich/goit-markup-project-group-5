@@ -1,0 +1,9 @@
+@use '../utils/vars' as vars;
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accent-span {
+  color: vars.getColor('accent');
+}
