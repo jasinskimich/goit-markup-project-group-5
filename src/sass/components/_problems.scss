@@ -14,13 +14,14 @@
 }
 
 .problems__title {
-  margin: 0;
+  margin: 0 auto 30px;
+  width: 87.5vw;
+  min-width: 280px;
   font-weight: 800;
   font-size: 24px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: #fff;
-  margin-bottom: 30px;
 }
 
 .problems__list {
@@ -44,8 +45,96 @@
 .problems__list-item {
   counter-increment: problems-counter;
   &::before {
-    content: '— ' counter(problems-counter);
+    content: '— 0' counter(problems-counter);
     display: block;
     color: vars.getColor('accent');
+    margin-bottom: 5px;
+  }
+  width: 225px;
+  margin: 0 auto 10px;
+}
+
+@media all and (min-width: vars.getThreshold('mobile')) {
+  .problems__title {
+    width: 420px;
+  }
+  .problems__list {
+    width: 420px;
+  }
+}
+
+@media all and (min-width: vars.getThreshold('tablet')) {
+  .problems {
+    height: 490px;
+    padding: 60px 40px 0 40px;
+    background: linear-gradient(
+      to bottom,
+      vars.getColor('primary') 0,
+      vars.getColor('primary') 340px,
+      #fff 340px
+    );
+  }
+
+  .problems__title {
+    width: 688px;
+    line-height: 1.3;
+    margin: 0 auto 25px;
+  }
+
+  .problems__list {
+    width: 688px;
+    height: 303px;
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 109px 0 96px;
+  }
+  .problems__list-item {
+    width: 225px;
+    margin-bottom: 0;
+    &::before {
+      line-height: 1.2;
+    }
+    &:nth-child(4) {
+      line-height: 1.21;
+    }
+  }
+}
+
+@media all and (min-width: vars.getThreshold('desktop')) {
+  .problems {
+    padding: 76px 134px 0;
+    height: 700px;
+    background: linear-gradient(
+      to bottom,
+      vars.getColor('primary') 0,
+      vars.getColor('primary') 426px,
+      #fff 426px
+    );
+  }
+  .problems__title {
+    width: 1001px;
+
+    margin-bottom: 60px;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1.3;
+  }
+  .problems__list {
+    font-size: 15px;
+    line-height: 1.4;
+    width: 1001px;
+  }
+  .problems__list-item {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+    &:not(:nth-child(3n)) {
+      margin-right: 50px;
+    }
+    &::before {
+      line-height: 1.64;
+      margin-bottom: 10px;
+    }
   }
 }
