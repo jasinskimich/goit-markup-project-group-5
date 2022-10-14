@@ -56,7 +56,10 @@
   font-size: 14px;
 }
 input:invalid {
-  // color: rgba(255, 0, 0, 0.642);
+  background-color: rgba(252, 36, 36, 0.479);
+}
+input:valid {
+  background-color: rgba(0, 0, 0, 0);
 }
 .btn {
   display: flex;
