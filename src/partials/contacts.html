@@ -1,17 +1,33 @@
 <section class="contacts">
-  <h3 class="contacts__title">
+  <h3 class="contacts__title" id="#contacts">
     Registration for a <span class="accent-span"> free</span> phone
     <span class="accent-span">consultation</span> on the nuances of English UPE
   </h3>
   <p class="contacts__text">
-    Leave a request for participation in a <span>free lesson</span>. A consultant will contact you
-    and answer your questions
+    Leave a request for participation in a <span class="accent-span">free lesson</span>.
   </p>
-  <dev class="contacts-form">
+  <p class="contacts__text">A consultant will contact you and answer your questions</p>
+  <div class="contacts-form">
     <form class="form" name="signup-form">
-      <input required class="form__input" type="text" placeholder="Name*" />
-      <input required class="form__input" type="phone" placeholder="Phone*" />
+      <input
+        class="form__input"
+        type="text"
+        placeholder="Name*"
+        title="Your full name"
+        pattern="[A-Za-z]"
+        required
+      />
+      <input
+        class="form__input"
+        type="phone"
+        placeholder="Phone*"
+        title="Your phone number"
+        minlength="9"
+        maxlength="12"
+        pattern="[0-9]"
+        required
+      />
     </form>
-    <button class="btn" type="button">i want a free lesson</button>
-  </dev>
+  </div>
+  <button class="btn" type="button">i want a free lesson</button>
 </section>
