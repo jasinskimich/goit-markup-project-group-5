@@ -104,6 +104,7 @@
     }
   }
 }
+// mobile menu below
 
 .mobile-menu {
   width: 100vw;
@@ -201,6 +202,8 @@
   transform: translateX(0%);
 }
 
+// modal widnow below
+
 .modal {
   &__button {
     &--close {
@@ -214,6 +217,7 @@
 }
 
 .backdrop {
+  z-index: 1000;
   position: fixed;
   left: 0;
   top: 0;
@@ -254,6 +258,8 @@
   height: 400px;
   background-color: white;
 }
+
+// edycje dla poszczególnych viewportów
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .button {
@@ -297,4 +303,21 @@
       visibility: hidden;
     }
   }
+}
+
+// proba sprawdzenia przewijania linków zakotwiczonych
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 600px;
+  margin: 0 auto;
+}
+.kwadrat {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+.kwadrat:last-child {
+  background-color: green;
 }
