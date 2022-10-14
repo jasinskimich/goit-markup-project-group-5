@@ -9,7 +9,7 @@
 
 .hero {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 768px;
   margin: 15px auto 15px;
   padding: 20px 20px 50px;
   display: -webkit-box;
@@ -18,6 +18,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -51,6 +54,7 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 30px;
+  max-width: 480px;
 }
 .hero-box p {
   padding: 0;
@@ -117,6 +121,7 @@
   }
   .hero-box {
     padding: 0 0 0 42px;
+    max-width: none;
   }
   .hero-box__heading {
     font-weight: 800;
@@ -145,6 +150,7 @@
   }
   .hero-box {
     padding: 0 0 0 138px;
+    max-width: none;
   }
   .hero-box__heading {
     font-weight: 800;
