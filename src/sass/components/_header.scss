@@ -209,11 +209,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 85vw;
+  max-width: 580px;
   height: 400px;
   background-color: white;
   &__close-button {
     background-color: white;
+    border: none;
   }
 }
 
