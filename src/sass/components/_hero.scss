@@ -1,0 +1,119 @@
+@use '../utils/vars' as vars;
+
+.hero {
+    min-width: vars.getThreshold('minimum');
+    max-width: vars.getThreshold('mobile');
+    
+    border: 1px solid red;
+
+    margin: 15px auto 1500px;
+    padding: 20px 20px 50px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+    &__image-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image-item {
+        height: 177.5px;
+        width: 208px;
+    }
+}
+
+.hero-box {    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+    & p {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__heading {
+        color: vars.getColor('tertiary');
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        padding: 0;
+        margin: 0;
+        height: 80px;
+    }
+
+    &__content {
+        margin: 0;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.08em;
+        color: vars.getColor('secondary')
+    }
+
+    &__text-main {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.08em;
+        color: vars.getColor('primary');
+    }
+
+    &__button {
+        width: 260px;
+        height: 48px;
+        background-color: vars.getColor('accent');
+        border: transparent;
+        margin: 0 auto;
+    }
+
+    &__button-link {
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+
+
+
+
+}
+
+@media all and (min-width: vars.getThreshold('tablet')) {
+
+    .hero {
+        width: 768px;
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    .hero-box {
+        // width: 332px;
+        // align-items: flex-start;
+
+        &__heading {
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            color: vars.getColor('primary');
+        }
+
+        &__button {
+            margin: 0;
+        }
+    }
+
+}
