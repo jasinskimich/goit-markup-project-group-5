@@ -205,14 +205,15 @@
 // modal widnow below
 
 .modal {
-  &__button {
-    &--close {
-      fill: white;
-      background-color: rgba(17, 21, 24, 0.9);
-      &:hover {
-        cursor: pointer;
-      }
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  &__close-button {
+    background-color: white;
   }
 }
 
@@ -247,16 +248,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  height: 400px;
-  background-color: white;
 }
 
 // edycje dla poszczególnych viewportów
@@ -303,21 +294,4 @@
       visibility: hidden;
     }
   }
-}
-
-// proba sprawdzenia przewijania linków zakotwiczonych
-.flex {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 600px;
-  margin: 0 auto;
-}
-.kwadrat {
-  width: 300px;
-  height: 300px;
-  border: 2px solid black;
-}
-.kwadrat:last-child {
-  background-color: green;
 }
