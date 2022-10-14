@@ -3,24 +3,26 @@
   margin: 0;
   background-color: white;
   width: 100%;
-  &__logo {
+  &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
   }
-  &__icon {
+  &__box--icon {
     width: 84.12px;
     height: 30px;
   }
-  &__icon--orange {
+  &__contact--orange {
     fill: #ff6b09;
+    width: 15px;
+    height: 12px;
   }
-  &__logo--tel {
+  &__contact--icon {
     padding-top: 20px;
   }
-  &__tel {
+  &__contact--tel {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -29,20 +31,20 @@
     color: #111518;
     padding-top: 20px;
   }
-  &__img {
+  &__contact--img {
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 50px;
   }
-  &__date {
+  &__license {
     height: 70px;
     background-color: #111518;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &__date--text {
+  &__license--text {
     font-size: 14px;
     line-height: 2;
     color: #b9b9b9;
@@ -54,55 +56,67 @@
 }
 @media screen and (min-width: 768px) {
   .footer {
-    &__logo {
+    &__box {
       display: flex;
       padding-top: 0;
       flex-direction: row;
       padding: 40px;
+      width: 768px;
+      margin: 0 auto;
       justify-content: space-between;
     }
-    &__img {
+    &__contact--img {
       padding: 0;
       border-left: 1px solid #b9b9b9;
       padding-left: 24px;
     }
-    &__logo--tel {
+    &__contact--icon {
       padding: 0;
       padding-right: 24px;
     }
-    &__tablet {
+    &__contact {
       display: flex;
       align-items: center;
     }
-    &__tel {
+    &__contact--tel {
       font-size: 20px;
       line-height: 1.15;
       letter-spacing: 0.08em;
     }
-    &__icon {
+    &__box--icon {
       width: 128px;
       height: 45px;
     }
-    &__date {
+    &__license {
       display: flex;
       justify-content: flex-start;
+    }
+    &__license__box {
+      margin: 0 auto;
+      width: 768px;
       padding-left: 40px;
     }
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__logo {
+@media screen and (min-width: 1280px) {
+  .footer__box {
     display: flex;
-    justify-content: center;
-    max-width: 1200px;
+    width: 1280px;
+    margin: 0 auto;
   }
-  .footer__icon {
-    margin-right: 220px;
+  .footer__contact {
+    margin-right: 400px;
   }
-  .footer__tablet {
-    margin-right: 290px;
+  .footer__box--icon {
+    margin-left: 70px;
   }
-  .footer__date--text {
+  .footer__license--text {
+    display: flex;
     padding-left: 70px;
+  }
+
+  .footer__license__box {
+    width: 1280px;
+    margin: 0 auto;
   }
 }
