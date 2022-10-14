@@ -1,33 +1,81 @@
 @use '../utils/vars' as vars;
 
 .contacts {
-  background: url('../images/tablet-mobile-contactx2.jpg');
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/tablet-mobile-contactx2.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
   padding: 50px 20px;
+  min-width: 320px;
 }
 .contacts__title {
   font-size: 14px;
   font-weight: 800;
   text-align: center;
   letter-spacing: 0.03em;
-  height: 73px;
-  min-width: 280px;
   color: #ffffff;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 .contacts__text {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.08em;
-  height: 73px;
-  min-width: 280px;
   color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
 }
-// .contacts-form {}
-// .form {&__input}
-// .btn {}
+.contacts-form {
+  padding: 30px 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form__input {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  height: 48px;
+  max-width: 496px;
+  width: 100%;
+  padding-left: 16px;
+  color: #ffffff;
+  align-self: center;
+}
+::placeholder {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
+input:invalid {
+  // color: rgba(255, 0, 0, 0.642);
+}
+.btn {
+  display: flex;
+  min-width: 260px;
+  max-width: 367px;
+  height: 48px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: vars.getColor('accent');
+  border: 1px vars.getColor('accent');
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.btn:hover {
+  background-color: #e35c01;
+  box-shadow: 1px 0px 10px 3px rgba(34, 35, 58, 0.296);
+  transition-duration: 250ms;
+}
