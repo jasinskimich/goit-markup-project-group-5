@@ -1,8 +1,8 @@
 <section class="contacts">
-  <h3 class="contacts__title" id="#contacts">
+  <h2 class="contacts__title" id="#contacts">
     Registration for a <span class="accent-span"> free</span> phone
     <span class="accent-span">consultation</span> on the nuances of English UPE
-  </h3>
+  </h2>
   <p class="contacts__text">
     Leave a request for participation in a <span class="accent-span">free lesson</span>.
   </p>
@@ -13,19 +13,28 @@
         class="form__input"
         type="text"
         name="text"
+        required
         pattern="^[a-zA-Ząęłśćóżź]+\s[a-zA-Ząęłśćóżź\-]+(?:\s[a-zA-Ząęłśćóżź]+)?$"
-        title="First and last name"
+        title="Here put your full name please"
         placeholder="Name*"
       />
       <input
         class="form__input"
         type="phone"
         name="phone_number"
+        required
         pattern="^[0-9\-\+]{9,12}$"
-        title="Phone number"
+        title="Here put your phone number please"
         placeholder="Phone*"
       />
       <button class="btn" type="submit">i want a free lesson</button>
     </form>
+    <div class="popup">
+      <h4 class="popup__title">Thank you for leaving a request!</h4>
+      <p class="popup__text">
+        Your details have been succesfully submitted. Our consultant will contact you soon!
+      </p>
+      <button class="popup-btn" type="submit">OK</button>
+    </div>
   </div>
 </section>
