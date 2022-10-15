@@ -3,7 +3,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/tablet-mobile-contactx2.jpg');
   background-size: cover;
   background-position: center;
@@ -11,6 +11,7 @@
   width: 100%;
   padding: 50px 20px;
   min-width: 320px;
+  margin-top: 50px;
 }
 .contacts__title {
   font-size: 14px;
@@ -32,7 +33,7 @@
   margin: 0 auto;
 }
 .contacts-form {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .form {
   display: flex;
@@ -64,8 +65,7 @@ input:valid {
 }
 .btn {
   display: flex;
-  min-width: 260px;
-  max-width: 367px;
+  width: 260px;
   height: 48px;
   font-size: 12px;
   font-weight: 600;
@@ -83,28 +83,59 @@ input:valid {
   box-shadow: 1px 0px 10px 3px rgba(34, 35, 58, 0.296);
   transition-duration: 250ms;
 }
+
+@media all and (min-width: vars.getThreshold('mobile')) {
+  .contacts__title {
+    font-size: 18px;
+  }
+}
 @media all and (max-width: vars.getThreshold('tablet')) {
   .contacts__title {
-    max-width: 400px;
+    max-width: 396px;
   }
 }
 @media all and (min-width: vars.getThreshold('tablet')) {
   .contacts {
-    padding: 50px 100px;
+    padding: 70px;
   }
   .contacts__title {
     font-size: 26px;
     width: 100%;
-    max-width: 572px;
+    max-width: 854px;
+    padding: 0 100px;
   }
   .contacts__text {
     font-size: 14px;
-    max-width: 450px;
+    padding: 0 100px;
   }
 }
-
 @media all and (min-width: vars.getThreshold('desktop')) {
+  .contacts {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url('../images/desktop-contactx2.jpg');
+    background-size: cover;
+    padding-top: 100px;
+  }
+  .contacts__title {
+    font-size: 40px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  .contacts__text {
+    font-size: 28px;
+    max-width: 1000px;
+    padding: 0;
+  }
+  .contacts-form {
+    padding-top: 55px;
+  }
   .form__input {
     max-width: 496px;
+  }
+  .btn {
+    height: 70px;
+    width: 367px;
   }
 }
