@@ -8,25 +8,24 @@
   </p>
   <p class="contacts__text">A consultant will contact you and answer your questions</p>
   <div class="contacts-form">
-    <form class="form" name="signup-form">
+    <form class="form">
       <input
         class="form__input"
         type="text"
+        name="text"
+        pattern="^[a-zA-Ząęłśćóżź]+\s[a-zA-Ząęłśćóżź\-]+(?:\s[a-zA-Ząęłśćóżź]+)?$"
+        title="First and last name"
         placeholder="Name*"
-        title="Your full name"
-        pattern="[A-Za-z].{2,}"
-        required
       />
       <input
         class="form__input"
         type="phone"
+        name="phone_number"
+        pattern="^[0-9\-\+]{9,12}$"
+        title="Phone number"
         placeholder="Phone*"
-        title="Your phone number"
-        maxlength="12"
-        pattern="[0-9]"
-        required
       />
+      <button class="btn" type="submit">i want a free lesson</button>
     </form>
   </div>
-  <button class="btn" type="button">i want a free lesson</button>
 </section>

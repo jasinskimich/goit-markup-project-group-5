@@ -19,7 +19,7 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   width: 100%;
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 .contacts__text {
@@ -43,7 +43,7 @@
   background: rgba(0, 0, 0, 0);
   border: 1px solid #ffffff;
   height: 48px;
-  max-width: 496px;
+  max-width: 390px;
   width: 100%;
   padding-left: 16px;
   color: #ffffff;
@@ -56,7 +56,8 @@
   font-size: 14px;
 }
 input:invalid {
-  background-color: rgba(252, 36, 36, 0.479);
+  background-color: rgba(152, 0, 0, 0.479);
+  transition-duration: 250ms;
 }
 input:valid {
   background-color: rgba(0, 0, 0, 0);
@@ -81,4 +82,29 @@ input:valid {
   background-color: #e35c01;
   box-shadow: 1px 0px 10px 3px rgba(34, 35, 58, 0.296);
   transition-duration: 250ms;
+}
+@media all and (max-width: vars.getThreshold('tablet')) {
+  .contacts__title {
+    max-width: 400px;
+  }
+}
+@media all and (min-width: vars.getThreshold('tablet')) {
+  .contacts {
+    padding: 50px 100px;
+  }
+  .contacts__title {
+    font-size: 26px;
+    width: 100%;
+    max-width: 572px;
+  }
+  .contacts__text {
+    font-size: 14px;
+    max-width: 450px;
+  }
+}
+
+@media all and (min-width: vars.getThreshold('desktop')) {
+  .form__input {
+    max-width: 496px;
+  }
 }
