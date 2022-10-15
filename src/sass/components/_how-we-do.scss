@@ -80,8 +80,10 @@
 .how-we-do__svg {
   height: 48px;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  &-list {
+    padding-top: 30px;
+  }
 }
 
 .how-we-do__item--active {
@@ -109,13 +111,14 @@
   .how-we-do__section {
     padding-top: 30px;
     padding-bottom: 50px;
+    flex-basis: calc((100% - 1 * 30px) / 2);
   }
   .how-we-do__item {
-    flex-basis: calc((100% - 1 * 30px) / 2);
     max-width: 334px;
   }
   .how-we-do__list {
     padding-right: 2px;
+    width: 768px;
   }
 }
 

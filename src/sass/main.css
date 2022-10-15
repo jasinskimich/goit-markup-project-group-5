@@ -302,8 +302,10 @@
 .how-we-do__svg {
   height: 48px;
   width: 100%;
+  margin-bottom: 20px;
+}
+.how-we-do__svg-list {
   padding-top: 30px;
-  padding-bottom: 20px;
 }
 
 .how-we-do__item--active {
@@ -331,13 +333,14 @@
   .how-we-do__section {
     padding-top: 30px;
     padding-bottom: 50px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .how-we-do__item {
-    flex-basis: calc((100% - 30px) / 2);
     max-width: 334px;
   }
   .how-we-do__list {
     padding-right: 2px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
