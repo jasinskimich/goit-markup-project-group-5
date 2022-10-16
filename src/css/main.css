@@ -7,15 +7,6 @@
   color: #ff6b09;
 }
 
-.test {
-  border: 1px solid black;
-  height: 80px;
-  min-width: 320px;
-  max-width: 767px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .hero {
   min-width: 320px;
   max-width: 768px;
@@ -35,25 +26,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  background-image: url("../images/desktop-hero.png");
-  background-size: 208px 177.5px;
+  background-image: url("../images/desktop-hero.png"), url("../images/bg-wave.svg");
+  background-size: 208px 177.5px, cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
-}
-.hero__image-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.hero__image-item {
-  height: 177.5px;
-  width: 208px;
+  background-position: center bottom 50px, left bottom -25px;
 }
 .hero__box {
   display: -webkit-box;
@@ -67,7 +43,7 @@
       flex-wrap: nowrap;
   gap: 30px;
   max-width: 480px;
-  margin: 0 0 150px 0;
+  margin: 0 0 200px 0;
 }
 .hero p {
   padding: 0;
@@ -119,11 +95,6 @@
 }
 
 @media all and (min-width: 768px) {
-  .test {
-    width: 768px;
-    min-width: none;
-    max-width: none;
-  }
   .hero {
     width: 768px;
     max-width: 1354px;
@@ -136,17 +107,13 @@
             justify-content: flex-start;
     padding: 0 40px;
     gap: 0;
-    background-size: 375.75px 320.64px;
-    background-position: right top;
-  }
-  .hero__image-item {
-    height: 320.64px;
-    width: 375.75px;
+    background-size: 375.75px 320.64px, 768px 438px;
+    background-position: right top, right bottom;
   }
   .hero__box {
     padding: 0;
     max-width: 350px;
-    margin: 0 0 180px 0;
+    margin: 0 0 130px 0;
   }
   .hero__heading {
     font-weight: 800;
@@ -164,18 +131,13 @@
   }
 }
 @media all and (min-width: 1344px) {
-  .test {
-    width: 1344px;
-    min-width: none;
-    max-width: none;
-  }
   .hero {
     width: 1344px;
     max-width: 1680px;
     height: 778px;
     padding: 15px;
     margin: 0 auto;
-    background-size: 841.55px 718.14px;
+    background-size: 841.55px 718.14px, cover;
     background-position: right top;
   }
   .hero__box {
