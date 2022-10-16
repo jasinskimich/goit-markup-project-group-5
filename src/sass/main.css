@@ -254,7 +254,7 @@
   min-width: 280px;
   width: 100%;
   line-height: 28px;
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 0.08em;
   padding-top: 30px;
 }
@@ -269,8 +269,7 @@
   text-align: center;
   color: #111518;
   margin: 0;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
   letter-spacing: 0.08em;
 }
 .how-we-do__item-dash {
@@ -304,6 +303,7 @@
   height: 48px;
   width: 100%;
   margin-bottom: 20px;
+  fill: #ff6b09;
 }
 
 .how-we-do__item--active {
@@ -342,6 +342,13 @@
   }
   .how-we-do__heading {
     font-size: 26px;
+    line-height: 34px;
+  }
+  .how-we-do__item-heading {
+    line-height: 28px;
+  }
+  .how-we-do__item-paragraph {
+    line-height: 28px;
   }
 }
 @media screen and (min-width: 1354px) {
@@ -361,12 +368,22 @@
   }
   .how-we-do__heading {
     text-align: left;
-    padding-left: 25px;
+    padding-left: 155px;
     padding-bottom: 20px;
     font-size: 46px;
+    line-height: 60px;
   }
   .how-we-do__item-text {
     padding: 0 20px;
+  }
+  .how-we-do__item-heading {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+  }
+  .how-we-do__item-paragraph {
+    line-height: 28px;
+    font-size: 14px;
   }
 }
 /*
