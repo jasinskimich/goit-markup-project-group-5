@@ -3,13 +3,14 @@ $colors: (
   secondary: #b9b9b9,
   tertiary: #3d3d3d,
   accent: #ff6b09,
+  white: #ffffff,
 );
 
 $thresholds: (
   minimum: 320px,
   mobile: 480px,
   tablet: 768px,
-  desktop: 1280px,
+  desktop: 1354px,
 );
 
 @function getColor($color-name) {
