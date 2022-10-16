@@ -66,7 +66,7 @@
     background-image: url('../images/instagramx2.jpg');
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: vars.getThreshold('tablet')) {
   .footer {
     &__box {
       display: flex;
