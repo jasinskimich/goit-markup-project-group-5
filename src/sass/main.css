@@ -80,7 +80,7 @@
     margin-bottom: 16px;
   }
 }
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1354px) {
   .whiteboard-list__title {
     width: 1001px;
     margin-bottom: 47px;
@@ -125,7 +125,7 @@
     background: linear-gradient(to bottom, #111518 0, #111518 340px, #fff 340px);
   }
 }
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1354px) {
   .problems {
     padding-top: 76px;
     background: url("../images/flame.svg"), linear-gradient(to bottom, #111518 0, #111518 425px, #fff 425px);
@@ -191,7 +191,7 @@
     margin-bottom: 16px;
   }
 }
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1354px) {
   .benefits {
     padding-top: 0;
     background: linear-gradient(to bottom, #111518 0, #111518 160px, #fff 160px);
@@ -344,7 +344,7 @@
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1354px) {
   .how-we-do__section {
     display: flex;
     justify-content: center;
@@ -357,8 +357,7 @@
     flex-basis: calc((100% - 30px) / 3);
   }
   .how-we-do__list {
-    max-width: 1001px;
-    width: 100%;
+    width: 1314px;
   }
   .how-we-do__heading {
     text-align: left;
