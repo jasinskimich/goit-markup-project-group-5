@@ -195,6 +195,7 @@
     right: 23px;
     height: 15px;
     width: 15px;
+    background-color: rgba(17, 21, 24, 0.001);
   }
 }
 
@@ -216,6 +217,13 @@
   &__close-button {
     background-color: white;
     border: none;
+  }
+  &__button {
+    &--close {
+      fill: white;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
