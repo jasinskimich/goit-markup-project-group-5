@@ -7,10 +7,19 @@
   color: #ff6b09;
 }
 
+.test {
+  border: 1px solid black;
+  height: 80px;
+  min-width: 320px;
+  max-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .hero {
   min-width: 320px;
   max-width: 768px;
-  margin: 15px auto 15px;
+  margin: 15px auto;
   padding: 20px 20px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +35,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  background-image: url("../images/desktop-hero.png");
+  background-size: 208px 177.5px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 .hero__image-box {
   display: -webkit-box;
@@ -42,8 +55,7 @@
   height: 177.5px;
   width: 208px;
 }
-
-.hero-box {
+.hero__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,12 +67,13 @@
       flex-wrap: nowrap;
   gap: 30px;
   max-width: 480px;
+  margin: 0 0 150px 0;
 }
-.hero-box p {
+.hero p {
   padding: 0;
   margin: 0;
 }
-.hero-box__heading {
+.hero__heading {
   color: #3d3d3d;
   font-size: 20px;
   line-height: 130%;
@@ -69,17 +82,17 @@
   margin: 0;
   height: 80px;
 }
-.hero-box__content {
+.hero__content {
   margin: 0;
 }
-.hero-box__text {
+.hero__text {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.08em;
   color: #b9b9b9;
 }
-.hero-box__text-main {
+.hero__text-main {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -87,14 +100,14 @@
   color: #111518;
   width: 275px;
 }
-.hero-box__button {
+.hero__button {
   width: 260px;
   height: 48px;
   background-color: #ff6b09;
   border: transparent;
   margin: 0 auto;
 }
-.hero-box__button-link {
+.hero__button-link {
   color: #fff;
   font-weight: 600;
   font-size: 12px;
@@ -106,24 +119,36 @@
 }
 
 @media all and (min-width: 768px) {
+  .test {
+    width: 768px;
+    min-width: none;
+    max-width: none;
+  }
   .hero {
     width: 768px;
-    max-width: 1279px;
+    max-width: 1354px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 40px;
     gap: 0;
+    background-size: 375.75px 320.64px;
+    background-position: right top;
   }
   .hero__image-item {
     height: 320.64px;
     width: 375.75px;
   }
-  .hero-box {
-    padding: 0 0 0 42px;
-    max-width: none;
+  .hero__box {
+    padding: 0;
+    max-width: 350px;
+    margin: 0 0 180px 0;
   }
-  .hero-box__heading {
+  .hero__heading {
     font-weight: 800;
     font-size: 26px;
     line-height: 160%;
@@ -131,42 +156,55 @@
     color: #111518;
     height: 84px;
   }
-  .hero-box__button {
+  .hero__button {
     margin: 0;
   }
-  .hero-box__text-main {
+  .hero__text-main {
     width: 275px;
   }
 }
-@media all and (min-width: 1280px) {
-  .hero {
-    width: 1280px;
-    max-width: 1600px;
-  }
-  .hero__image-item {
-    height: 547.2px;
-    width: 620.69px;
-    padding: 0 34px 0 0;
-  }
-  .hero-box {
-    padding: 0 0 0 138px;
+@media all and (min-width: 1344px) {
+  .test {
+    width: 1344px;
+    min-width: none;
     max-width: none;
   }
-  .hero-box__heading {
+  .hero {
+    width: 1344px;
+    max-width: 1680px;
+    height: 778px;
+    padding: 15px;
+    margin: 0 auto;
+    background-size: 841.55px 718.14px;
+    background-position: right top;
+  }
+  .hero__box {
+    padding: 0;
+    max-width: 600px;
+    margin: 50px 0 280px 0;
+  }
+  .hero__heading {
     font-weight: 800;
-    font-size: 52px;
+    font-size: 58px;
     line-height: 130%;
     letter-spacing: 0.03em;
     color: #111518;
-    height: 225px;
     padding: 20px 0 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .hero-box__text {
+  .hero__text {
     font-size: 18px;
   }
-  .hero-box__text-main {
+  .hero__text-main {
     font-size: 18px;
     width: auto;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/desktop-hero@2x.png");
   }
 }
 .whiteboard-list__title {

@@ -1,12 +1,21 @@
 @use '../utils/vars' as vars;
 
+.test {
+    border: 1px solid black;
+    height: 80px;
+    min-width: 320px;
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .hero {
     min-width: vars.getThreshold('minimum');
     max-width: vars.getThreshold('tablet');
     
     // border: 1px solid red;
 
-    margin: 15px auto 15px;
+    margin: 15px auto;
     padding: 20px 20px 50px;
 
     display: flex;
@@ -14,6 +23,11 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+
+    background-image: url("../images/desktop-hero.png");
+    background-size: 208px 177.5px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 
     &__image-box {
         display: flex;
@@ -24,14 +38,15 @@
         height: 177.5px;
         width: 208px;
     }
-}
 
-.hero-box {    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 30px;
-    max-width: 480px;
+    &__box {    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+        max-width: 480px;
+        margin: 0 0 150px 0;
+    }
 
     & p {
         padding: 0;
@@ -88,29 +103,40 @@
         text-decoration: none;
     }
 
-
-
-
-
 }
 
+
 @media all and (min-width: vars.getThreshold('tablet')) {
+    .test {
+    width: 768px;
+    min-width: none;
+    max-width: none;
+}
 
     .hero {
-        width: 768px;
-        max-width: 1279px;
+        width: vars.getThreshold('tablet');
+        max-width: 1354px;
         flex-direction: row;
+        justify-content: flex-start;
+        padding: 0 40px;
         gap: 0;
+
+        background-size: 375.75px 320.64px;
+        background-position: right top;
 
         &__image-item {
             height: 320.64px;
             width: 375.75px;
         }
-    }
+        
 
-    .hero-box {
-        padding: 0 0 0 42px;
-        max-width: none;
+        &__box {
+            padding: 0;
+            max-width: 350px;
+            margin: 0 0 180px 0;
+
+        }
+
 
         &__heading {
             font-weight: 800;
@@ -124,49 +150,64 @@
         &__button {
             margin: 0;
         }
-
+        
         &__text-main {
             width: 275px;
         }
     }
-
+    
 }
 
-@media all and (min-width: vars.getThreshold('desktop')) {
-
-    .hero {
-        width: 1280px;
-        max-width: 1600px;
-
-        &__image-item {
-            height: 547.2px;
-            width: 620.69px;
-            padding: 0 34px 0 0;
-        }
-    }
-
-    .hero-box {
-        padding: 0 0 0 138px;
+@media all and (min-width: 1344px) {
+    .test {
+        width: 1344px;
+        min-width: none;
         max-width: none;
+    }
+    .hero {
+        width: 1344px;
+        max-width: 1680px;
+        height: 778px;
+        padding: 15px;
+        margin: 0 auto;
+
+        background-size: 841.55px 718.14px;
+        background-position: right top;
+        
+
+        &__box {
+            padding: 0;
+            max-width: 600px;
+            margin: 50px 0 280px 0;
+
+        }
 
         &__heading {
             font-weight: 800;
-            font-size: 52px;
+            font-size: 58px;
             line-height: 130%;
             letter-spacing: 0.03em;
             color: vars.getColor('primary');
-            height: 225px;
             padding: 20px 0 0;
+            height: fit-content;
         }
-
+        
         &__text {
             font-size: 18px;
         }
-
+        
         &__text-main {
             font-size: 18px;
             width: auto;
         }
     }
+}
 
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/desktop-hero@2x.png");
+  }
 }
