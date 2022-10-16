@@ -1,0 +1,14 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 30px;
+  &__item {
+    width: 216px;
+    height: 69px;
+    &--style {
+      border: 1px solid black;
+    }
+  }
+}
