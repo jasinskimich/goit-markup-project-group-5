@@ -232,8 +232,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
   color: #111518;
 }
@@ -246,10 +246,22 @@
   gap: 15px;
   padding: 0 20px;
 }
-.how-we-do__list-text {
+
+.how-we-do__item {
+  background: #ffffff;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  min-width: 280px;
+  width: 100%;
+  line-height: 28px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding-top: 30px;
+}
+.how-we-do__item-text {
   list-style: none;
 }
-.how-we-do__list-heading {
+.how-we-do__item-heading {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -261,7 +273,7 @@
   line-height: 28px;
   letter-spacing: 0.08em;
 }
-.how-we-do__list-dash {
+.how-we-do__item-dash {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -271,7 +283,7 @@
   margin: 0;
   font-size: 20px;
 }
-.how-we-do__list-paragraph {
+.how-we-do__item-paragraph {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -281,17 +293,6 @@
   color: #b9b9b9;
   margin: 0;
   padding-bottom: 51px;
-}
-
-.how-we-do__item {
-  background: #ffffff;
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  list-style-type: none;
-  min-width: 280px;
-  width: 100%;
-  line-height: 28px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
 }
 
 .how-we-do__text {
@@ -304,28 +305,25 @@
   width: 100%;
   margin-bottom: 20px;
 }
-.how-we-do__svg-list {
-  padding-top: 30px;
-}
 
 .how-we-do__item--active {
   background: #ff6b09;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 }
 
-.how-we-do__svg-list--active {
+.how-we-do__svg--active {
   fill: #ffffff;
 }
 
-.how-we-do__list-heading--active {
+.how-we-do__item-heading--active {
   color: #ffffff;
 }
 
-.how-we-do__list-dash--active {
+.how-we-do__item-dash--active {
   color: #ffffff;
 }
 
-.how-we-do__list-paragraph--active {
+.how-we-do__item-paragraph--active {
   color: #ffffff;
 }
 
@@ -342,6 +340,9 @@
     padding-right: 2px;
     width: 768px;
   }
+  .how-we-do__heading {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .how-we-do__section {
@@ -351,9 +352,6 @@
     padding-bottom: 80px;
     margin: 0;
     padding-right: 2px;
-  }
-  .how-we-do__heading {
-    padding-bottom: 20px;
   }
   .how-we-do__item {
     flex-basis: calc((100% - 30px) / 3);
@@ -365,8 +363,10 @@
   .how-we-do__heading {
     text-align: left;
     padding-left: 25px;
+    padding-bottom: 20px;
+    font-size: 46px;
   }
-  .how-we-do__list-text {
+  .how-we-do__item-text {
     padding: 0 20px;
   }
 }
