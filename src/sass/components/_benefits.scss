@@ -3,7 +3,6 @@
 .benefits {
   min-width: 320px;
   width: 100%;
-  display: none;
   padding: 0 20px;
   background: linear-gradient(
     to bottom,
@@ -40,11 +39,11 @@
   }
 }
 
-@media all and (max-width: (vars.getThreshold('tablet') - 1px)) {
-  .benefits {
-    margin-top: -50px;
-  }
-}
+// @media all and (max-width: (vars.getThreshold('tablet') - 1px)) {
+//   .benefits {
+//     margin-top: -50px;
+//   }
+// }
 
 @media all and (min-width: vars.getThreshold('tablet')) {
   .benefits {
