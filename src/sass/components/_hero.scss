@@ -1,10 +1,11 @@
 @use '../utils/vars' as vars;
 
+
 .hero {
     min-width: vars.getThreshold('minimum');
     max-width: vars.getThreshold('tablet');
     
-    // border: 1px solid red;
+    border: 1px solid red;
 
     margin: 15px auto;
     padding: 20px 20px 50px;
@@ -103,7 +104,7 @@
         gap: 0;
 
         background-size: 375.75px 320.64px, 768px 438px;
-        background-position: right top, right bottom;
+        background-position: right 50px top, right 50px bottom 30px;
 
 
         &__box {
@@ -144,7 +145,7 @@
         margin: 0 auto;
 
         background-size: 841.55px 718.14px, cover;
-        background-position: right top;
+        background-position: right 30px top, right top;
         
 
         &__box {
