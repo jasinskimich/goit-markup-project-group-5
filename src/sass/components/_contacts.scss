@@ -117,14 +117,14 @@ input:not(:placeholder-shown):required:valid {
     padding-top: 100px;
   }
   .contacts__title {
-    font-size: 40px;
+    font-size: 46px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1132px;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
   }
   .contacts__text {
-    font-size: 28px;
+    font-size: 30px;
     max-width: 1000px;
     padding: 0;
   }
@@ -132,10 +132,17 @@ input:not(:placeholder-shown):required:valid {
     padding-top: 55px;
   }
   .form__input {
+    height: 70px;
     max-width: 496px;
+    font-size: 20px;
+    &::placeholder {
+      font-size: 20px;
+    }
   }
   .btn {
     height: 70px;
     width: 367px;
+    margin-top: 50px;
+    font-size: 14px;
   }
 }
