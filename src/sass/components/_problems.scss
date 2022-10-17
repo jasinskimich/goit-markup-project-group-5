@@ -1,0 +1,42 @@
+@use '../utils/vars' as vars;
+
+.problems {
+  min-width: 320px;
+  width: 100%;
+  padding: 50px 20px 0 20px;
+  background: linear-gradient(
+    to bottom,
+    vars.getColor('primary') 0,
+    vars.getColor('primary') 545px,
+    #fff 545px
+  );
+  background-clip: border-box;
+}
+
+@media all and (min-width: vars.getThreshold('tablet')) {
+  .problems {
+    padding: 60px 40px 0 40px;
+    background: linear-gradient(
+      to bottom,
+      vars.getColor('primary') 0,
+      vars.getColor('primary') 340px,
+      #fff 340px
+    );
+  }
+}
+
+@media all and (min-width: vars.getThreshold('desktop')) {
+  .problems {
+    padding: 100px 20px 0 20px;
+    background: url('../images/flame.svg'),
+      linear-gradient(
+        to bottom,
+        vars.getColor('primary') 0,
+        vars.getColor('primary') 560px,
+        #fff 560px
+      );
+    background-size: 455px 472px, 100% 100%;
+    background-position: calc(50% + 634px) 88px, 0% 0%;
+    background-repeat: no-repeat;
+  }
+}

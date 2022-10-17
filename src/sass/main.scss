@@ -4,5 +4,9 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@use './example';
 @use './utils/vars';
+@use './components/global';
+@use './components/whiteboard-list';
+@use './components/problems';
+@use './components/benefits';
+@import "./components/header";
