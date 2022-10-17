@@ -111,6 +111,7 @@
     padding-left: 183px;
     &__steps-list {
       display: flex;
+      border-top: 1px solid #ffffff;
       padding-right: 30px;
     }
     &__item-list {
@@ -119,7 +120,6 @@
     }
     &__step {
       border-left: none;
-      border-top: 1px solid #ffffff;
       padding: 0;
       width: 240px;
       padding-top: 60px;
