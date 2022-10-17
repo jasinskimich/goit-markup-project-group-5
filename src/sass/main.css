@@ -258,9 +258,6 @@
   letter-spacing: 0.08em;
   padding-top: 30px;
 }
-.how-we-do__item-text {
-  list-style: none;
-}
 .how-we-do__item-heading {
   font-family: "Montserrat";
   font-style: normal;
@@ -337,7 +334,6 @@
     width: 334px;
   }
   .how-we-do__list {
-    padding-right: 2px;
     width: 768px;
   }
   .how-we-do__heading {
@@ -367,15 +363,16 @@
   .how-we-do__list {
     width: 1314px;
   }
+  .how-we-do__text {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .how-we-do__heading {
     text-align: left;
     padding-left: 25px;
     padding-bottom: 20px;
     font-size: 46px;
     line-height: 60px;
-  }
-  .how-we-do__item-text {
-    padding: 0 20px;
   }
   .how-we-do__item-heading {
     font-size: 20px;
