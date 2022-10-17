@@ -334,7 +334,7 @@
     flex-basis: calc((100% - 30px) / 2);
   }
   .how-we-do__item {
-    max-width: 334px;
+    width: 334px;
   }
   .how-we-do__list {
     padding-right: 2px;
@@ -358,17 +358,18 @@
     padding-top: 100px;
     padding-bottom: 80px;
     margin: 0;
-    padding-right: 2px;
   }
   .how-we-do__item {
     flex-basis: calc((100% - 30px) / 3);
+    width: 425px;
+    height: 396px;
   }
   .how-we-do__list {
     width: 1314px;
   }
   .how-we-do__heading {
     text-align: left;
-    padding-left: 155px;
+    padding-left: 25px;
     padding-bottom: 20px;
     font-size: 46px;
     line-height: 60px;
@@ -380,10 +381,14 @@
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.08em;
+    width: 365px;
+    height: 53px;
   }
   .how-we-do__item-paragraph {
     line-height: 28px;
-    font-size: 14px;
+    font-size: 18px;
+    width: 365px;
+    height: 138px;
   }
 }
 /*
