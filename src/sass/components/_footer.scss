@@ -15,22 +15,22 @@
     width: 84.12px;
     height: 30px;
   }
-  &__contact--orange {
+  &__contact-icon {
     fill: vars.getColor('accent');
-    width: 15px;
-    height: 12px;
+    width: 20px;
+    height: 19px;
+    transform: translateY(4px);
   }
-  &__contact--icon {
-    padding-top: 20px;
+  &__contact-tel {
+    margin-top: 20px;
   }
-  &__contact--tel {
+  &__contact-number {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
     color: #111518;
-    padding-top: 20px;
   }
   &__license {
     height: 70px;
@@ -73,18 +73,23 @@
       margin: 0 auto;
       justify-content: space-between;
     }
-    &__contact--icon {
-      padding: 0;
+    &__contact-tel {
+      margin-top: 0;
       padding-right: 24px;
     }
     &__contact {
       display: flex;
       align-items: center;
     }
-    &__contact--tel {
+    &__contact-icon {
+      width: 24px;
+      height: 23px;
+    }
+    &__contact-number {
       font-size: 20px;
       line-height: 1.15;
       letter-spacing: 0.08em;
+      padding-top: 10px;
     }
     &__icon {
       width: 128px;
@@ -118,6 +123,12 @@
   }
   .footer__contact {
     margin-right: 400px;
+  }
+  .footer__contact-icon {
+    fill: vars.getColor('accent');
+    width: 30px;
+    height: 29px;
+    transform: translateY(7px);
   }
   .footer__icon {
     margin-left: 70px;
