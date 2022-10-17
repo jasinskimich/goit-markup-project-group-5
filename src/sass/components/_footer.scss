@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
   }
-  &__license--text {
+  &__license-text {
     font-size: 14px;
     line-height: 2;
     color: vars.getColor('secondary');
@@ -120,9 +120,10 @@
     display: flex;
     width: 1314px;
     margin: 0 auto;
+    padding: 40px 0 40px 0;
   }
   .footer__contact {
-    margin-right: 400px;
+    margin-right: 477px;
   }
   .footer__contact-icon {
     fill: vars.getColor('accent');
@@ -133,7 +134,7 @@
   .footer__icon {
     margin-left: 70px;
   }
-  .footer__license--text {
+  .footer__license-text {
     display: flex;
     padding-left: 70px;
   }
@@ -141,5 +142,6 @@
   .footer__license__box {
     width: 1314px;
     margin: 0 auto;
+    padding-left: 0;
   }
 }
