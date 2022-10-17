@@ -3,6 +3,7 @@
 .benefits {
   min-width: 320px;
   width: 100%;
+  display: none;
   padding: 0 20px;
   background: linear-gradient(
     to bottom,
@@ -87,7 +88,7 @@
 
 @media all and (min-width: vars.getThreshold('desktop')) {
   .benefits {
-    padding-top: 0;
+    padding: 0;
     background: none;
   }
 
