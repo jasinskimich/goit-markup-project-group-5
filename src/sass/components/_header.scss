@@ -387,6 +387,12 @@
 // edycje dla poszczególnych viewportów
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+  .header {
+    &__container {
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
   .button {
     &__form {
       display: block;
@@ -407,7 +413,7 @@
       display: flex;
     }
     &__container {
-      width: 1280px;
+      width: 1314px;
       margin: 0 auto;
     }
     &__links {
