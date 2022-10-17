@@ -13,35 +13,22 @@
     letter-spacing: 0.03em;
     color: white;
     text-align: left;
+    margin-bottom: 40px;
     &--small {
       font-weight: 700;
       font-size: 14px;
-      line-height: 2;
       letter-spacing: 0.08em;
       color: white;
-      margin-top: 40px;
+      padding-bottom: 5px;
     }
   }
-  &__container {
-    border-left: 1px solid #ffffff;
+  &__steps-list {
+    list-style: none;
   }
   &__item-list {
     list-style: none;
-    padding-left: 20px;
-    flex-grow: 1;
-    &::before {
-      width: 12px;
-      height: 12px;
-      background: #ff6b09;
-      border-radius: 50%;
-      content: '';
-      display: block;
-      position: absolute;
-      transform: translateX(-26px);
-    }
-    & li {
-      padding-bottom: 5px;
-      transform: translateY(-8px);
+    &--small {
+      list-style: none;
     }
   }
   &__tab {
@@ -50,6 +37,7 @@
     line-height: 1.66;
     letter-spacing: 0.08em;
     color: #ff6b09;
+    padding-bottom: 5px;
   }
   &__description {
     font-size: 12px;
@@ -57,10 +45,25 @@
     letter-spacing: 0.08em;
     color: #b9b9b9;
   }
-  &__text {
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
+  &__item {
+    padding-bottom: 8px;
+  }
+  &__step {
+    padding-bottom: 40px;
+    padding-left: 26px;
+    &::before {
+      width: 12px;
+      height: 12px;
+      background: #ff6b09;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translateX(-32px);
+    }
+    &:not(:last-child) {
+      border-left: 1px solid #ffffff;
+    }
   }
   &__figure {
     overflow: hidden;
@@ -79,28 +82,16 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .program {
     &__header {
-      left: 40px;
-      position: absolute;
       font-size: 26px;
       line-height: 1.31;
       letter-spacing: 0.03em;
     }
-    &__text {
+    &__item-list {
       display: flex;
-      flex-direction: row;
-      gap: 80px;
+      gap: 50px;
     }
     &__item {
-      width: 130px;
-    }
-    &__item-list {
-      padding-left: 50px;
-      &::before {
-        transform: translateX(-56px);
-      }
-    }
-    &__container {
-      margin-top: 86px;
+      width: 176px;
     }
     &__figure {
       display: flex;
@@ -117,13 +108,27 @@
 @media screen and (min-width: 1280px) {
   .program {
     height: 1233px;
-    padding-top: 120px;
-    &__container {
+    padding-left: 183px;
+    &__steps-list {
       display: flex;
+      padding-right: 30px;
+    }
+    &__item-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__step {
       border-left: none;
       border-top: 1px solid #ffffff;
+      padding: 0;
+      width: 240px;
       padding-top: 60px;
-      gap: 30px;
+      &::before {
+        transform: translateY(-66px);
+      }
+      &:not(:last-child) {
+        border-left: none;
+      }
     }
     &__header {
       padding-bottom: 100px;
@@ -140,15 +145,6 @@
         padding-bottom: 25px;
       }
     }
-    &__item-list {
-      padding: 0;
-      &::before {
-        transform: translateY(-66px);
-      }
-      & li {
-        padding-bottom: 0;
-      }
-    }
     &__tab {
       font-weight: 700;
       font-size: 20px;
@@ -160,15 +156,13 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 1.55;
-    }
-    &__text {
-      gap: 25px;
+      padding-right: 10px;
     }
     &__figure {
       position: absolute;
       left: 0;
-      margin-top: 390px;
       margin-left: -160px;
+      margin-top: -108px;
     }
     &__image {
       width: 683px;
