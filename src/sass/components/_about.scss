@@ -3,11 +3,18 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 30px;
   &__layout {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    padding-right: 21px;
+  }
+  &__margin {
+    max-width: 1280px;
   }
   &__heading {
     font-family: 'Montserrat';
@@ -34,7 +41,7 @@
     margin-bottom: 9.67px;
   }
   &__border {
-    min-width: 320px;
+    min-width: 270px;
     max-width: 640px;
     border: 0.967066px solid #b9b9b9;
   }
@@ -42,6 +49,7 @@
     margin-top: 20px;
     margin-bottom: 25px;
     padding: 0px;
+    padding-right: 8px;
     &__icon {
       list-style: none;
       float: left;
@@ -100,17 +108,28 @@
 
 @media screen and (min-width: 480px) {
   .about__position {
-    max-width: 480px;
+    width: 439px;
+  }
+  .about__layout {
+    width: 480px;
+  }
+  .about__margin {
+    width: 439px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about {
     width: 768px;
-    padding-left: 43px;
-    padding-right: 40px;
     &__layout {
+      padding-left: 43px;
+      padding-right: 40px;
       flex-direction: row;
+      width: 685px;
+      margin: 0px;
+    }
+    &__margin {
+      width: 284px;
     }
     &__heading {
       font-family: 'Montserrat ExtraBold';
@@ -142,14 +161,23 @@
       font-size: 10px;
       line-height: 28px;
     }
+    &__position {
+      width: 405px;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about {
     width: 1280px;
-    padding-left: 91.5px;
-    padding-right: 147.5px;
+    &__layout {
+      padding-left: 91.5px;
+      padding-right: 147.5px;
+      width: 1280px;
+    }
+    &__margin {
+      width: 561px;
+    }
     &__heading {
       font-size: 46px;
       margin-bottom: 50px;
@@ -170,7 +198,7 @@
       &__experience {
         font-size: 16px;
         line-height: 19px;
-        margin-left: 35px;
+        margin-left: 50px;
       }
     }
     &__icon {
@@ -188,6 +216,9 @@
     &__certificate {
       font-size: 18px;
       line-height: 28px;
+    }
+    &__position {
+      width: 640px;
     }
   }
 }
