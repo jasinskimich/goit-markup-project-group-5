@@ -61,7 +61,8 @@
 
 @media all and (min-width: vars.getThreshold('desktop')) {
   .guarantee {
-    width: 1354px;
+    width: 100%;
+    max-width: 1354;
     text-align: center;
     align-items: center;
     &__title {
