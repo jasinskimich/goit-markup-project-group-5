@@ -4,6 +4,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .how-we-do__heading {
@@ -106,7 +107,6 @@
 @media screen and (min-width: vars.getThreshold('tablet')) {
   .how-we-do__section {
     padding-top: 30px;
-    padding-bottom: 50px;
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
   .how-we-do__item {
@@ -135,8 +135,8 @@
     display: flex;
     justify-content: center;
     padding-top: 100px;
-    padding-bottom: 80px;
-    margin: 0;
+    padding-bottom: 0;
+    margin: 0 0 130px;
   }
   .how-we-do__item {
     flex-basis: calc((100% - 1 * 40px) / 3);
