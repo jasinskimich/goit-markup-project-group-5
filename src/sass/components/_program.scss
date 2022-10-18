@@ -6,7 +6,7 @@
 }
 
 .program {
-  background-color: #111518;
+  background-color: vars.getColor('primary');
   padding: 50px 0 0 94px;
   &__container {
     margin: 0 auto;
@@ -41,14 +41,14 @@
     font-size: 12px;
     line-height: 1.66;
     letter-spacing: 0.08em;
-    color: #ff6b09;
+    color: vars.getColor('accent');
     padding-bottom: 5px;
   }
   &__description {
     font-size: 12px;
     line-height: 1.66;
     letter-spacing: 0.08em;
-    color: #b9b9b9;
+    color: vars.getColor('secondary');
   }
   &__item {
     padding-bottom: 8px;
@@ -125,7 +125,9 @@
     }
     &__steps-list {
       display: flex;
+      border-top: 1px solid #ffffff;
       padding-right: 30px;
+      gap: 30px;
     }
     &__item-list {
       display: flex;
@@ -133,9 +135,8 @@
     }
     &__step {
       border-left: none;
-      border-top: 1px solid #ffffff;
       padding: 0;
-      width: 240px;
+      width: 200px;
       padding-top: 60px;
       &::before {
         transform: translateY(-66px);
