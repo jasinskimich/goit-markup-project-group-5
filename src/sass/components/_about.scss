@@ -3,6 +3,7 @@
   max-width: 1354px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   &__layout {
     margin-left: auto;
     margin-right: auto;
@@ -17,8 +18,6 @@
     max-width: 1354px;
   }
   &__heading {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 20px;
     line-height: 130%;
@@ -32,7 +31,7 @@
     height: 305px;
   }
   &__name {
-    font-family: 'Montserrat ExtraBold';
+    font-weight: 800;
     font-size: 19.3413px;
     line-height: 23px;
     letter-spacing: 0.08em;
@@ -56,8 +55,8 @@
     }
     &__experience {
       list-style: none;
-      font-family: 'Montserrat SemiBold';
-      font-size: 13.5389px;
+      font-size: 14px;
+      font-weight: 600;
       line-height: 16px;
       letter-spacing: 0.06em;
       color: #111518;
@@ -71,9 +70,7 @@
     fill: #ff6b09;
   }
   &__line {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.08em;
