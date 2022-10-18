@@ -1,20 +1,20 @@
 .about {
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 1354px;
   margin-left: auto;
   margin-right: auto;
   &__layout {
     margin-left: auto;
     margin-right: auto;
     min-width: 320px;
-    max-width: 1280px;
+    max-width: 1354px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 21px;
   }
   &__margin {
-    max-width: 1280px;
+    max-width: 1354px;
   }
   &__heading {
     font-family: 'Montserrat';
@@ -167,13 +167,13 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1354px) {
   .about {
-    width: 1280px;
+    width: 1354px;
     &__layout {
       padding-left: 91.5px;
       padding-right: 147.5px;
-      width: 1280px;
+      width: 1354px;
     }
     &__margin {
       width: 561px;
