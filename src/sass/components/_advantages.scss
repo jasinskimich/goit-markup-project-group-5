@@ -74,21 +74,19 @@
 
 @media screen and (min-width: 768px) and (max-width: 1314px) {
   .advantages {
-    width: 768px;
+    width: 688px;
     margin: 0 auto;
     &__list {
       flex-direction: row;
+      justify-content: space-between;
     }
     &__container {
       width: 688px;
     }
   }
-  li:nth-child(2) {
-    padding-right: 30px;
-  }
 }
 
-@media screen and (min-width: 1314px) {
+@media screen and (min-width: 1354px) {
   .advantages {
     width: 1314px;
     margin: 0 auto;
@@ -146,8 +144,5 @@
       position: relative;
       left: -28px;
     }
-  }
-  li:nth-child(2) {
-    padding-right: 30px;
   }
 }
