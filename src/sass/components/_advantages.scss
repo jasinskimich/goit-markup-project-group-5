@@ -3,7 +3,7 @@
 .advantages {
   &__container {
     width: 223px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
   &__title {
     display: none;
@@ -89,7 +89,7 @@
 @media screen and (min-width: 1354px) {
   .advantages {
     width: 1314px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     &__container {
       width: 1314px;
     }

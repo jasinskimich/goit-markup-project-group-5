@@ -45,16 +45,18 @@
     margin: 0;
     font-size: 14px;
     letter-spacing: 0.08em;
-  }
-  &-dash {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: vars.getColor('accent');
-    margin: 0;
-    font-size: 20px;
+    &::after {
+      content: '—';
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      color: vars.getColor('accent');
+      margin: 0;
+      font-size: 20px;
+      display: block;
+    }
   }
   &-paragraph {
     font-family: 'Montserrat';
@@ -70,7 +72,7 @@
 }
 
 .how-we-do__text {
-  padding: 0;
+  padding: 0 10px 0;
 }
 
 /* SVG */
@@ -92,10 +94,9 @@
 
 .how-we-do__item-heading--active {
   color: #ffffff;
-}
-
-.how-we-do__item-dash--active {
-  color: #ffffff;
+  &::after {
+    color: #ffffff;
+  }
 }
 
 .how-we-do__item-paragraph--active {
@@ -124,6 +125,9 @@
   .how-we-do__item-paragraph {
     line-height: 28px;
   }
+  .how-we-do__text {
+    padding: 0 20px 0;
+  }
 }
 
 @media screen and (min-width: vars.getThreshold('desktop')) {
@@ -145,8 +149,7 @@
     gap: 20px;
   }
   .how-we-do__text {
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 0 40px 0;
   }
   .how-we-do__heading {
     text-align: left;
@@ -160,12 +163,9 @@
     line-height: 28px;
     letter-spacing: 0.08em;
     width: 365px;
-    height: 53px;
   }
   .how-we-do__item-paragraph {
     line-height: 28px;
     font-size: 18px;
-    width: 365px;
-    height: 138px;
   }
 }

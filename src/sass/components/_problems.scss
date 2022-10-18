@@ -1,6 +1,7 @@
 @use '../utils/vars' as vars;
 
 .problems {
+  margin-bottom: 50px;
   min-width: 320px;
   width: 100%;
   padding: 50px 20px 0 20px;
@@ -15,6 +16,7 @@
 
 @media all and (min-width: vars.getThreshold('tablet')) {
   .problems {
+    margin-bottom: 20px;
     padding: 60px 40px 0 40px;
     background: linear-gradient(
       to bottom,
@@ -28,6 +30,7 @@
 @media all and (min-width: vars.getThreshold('desktop')) {
   .problems {
     padding: 100px 0 0;
+    margin-bottom: 100px;
     background: url('../images/flame.svg'),
       linear-gradient(
         to bottom,
