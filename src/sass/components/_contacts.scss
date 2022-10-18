@@ -109,11 +109,14 @@ input:not(:placeholder-shown):required:valid {
   .contacts {
     padding: 70px;
     background-position: center;
+    margin-top: 50px;
   }
   .contacts__title {
     font-size: 26px;
     width: 100%;
+    height: auto;
     max-width: 569px;
+    margin-bottom: 30px;
   }
   .contacts__text {
     font-size: 14px;

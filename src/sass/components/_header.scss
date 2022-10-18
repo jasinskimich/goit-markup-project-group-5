@@ -128,10 +128,9 @@
   }
 }
 
-
 // edycje dla poszczególnych viewportów
 
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1354px) {
   .header {
     &__container {
       width: 768px;
@@ -156,9 +155,8 @@
       left: 340px;
     }
   }
-  
 }
-@media screen and (min-width: 1314px) {
+@media screen and (min-width: 1354px) {
   .header {
     &__nav {
       display: flex;
