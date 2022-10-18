@@ -8,7 +8,7 @@
   margin: 0 auto;
   &__title {
     font-size: 26px;
-    line-height: 34px;
+    line-height: 130%;
     letter-spacing: 0.03em;
     color: #111518;
     margin-bottom: 30px;
@@ -27,14 +27,21 @@
   &__list-item {
     position: relative;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 167%;
     color: #3d3d3d;
     text-align: left;
     padding-bottom: 23px;
     border-left: 1px dashed rgba(185, 185, 185, 1);
     padding-left: 20px;
     margin-left: 5px;
-    &:nth-child(8) {
+    &::before {
+      content: url('../images/flame-orange.svg');
+      position: absolute;
+      width: 14.37px;
+      height: 20px;
+      transform: translateX(-27px);
+    }
+    &:nth-child(4) {
       border: none;
       padding-bottom: 0;
     }
@@ -44,6 +51,7 @@
     fill: #ff6b09;
     width: 14px;
     height: 20px;
+    display: none;
   }
 }
 
@@ -55,6 +63,9 @@
     &__bg {
       width: 688px;
       margin-left: 40px;
+    }
+    &__list-item {
+      line-height: 233%;
     }
   }
 }
@@ -80,9 +91,14 @@
     &__list-item {
       font-weight: 500;
       font-size: 20px;
-      line-height: 28px;
+      line-height: 140%;
       margin-left: 9px;
       padding-left: 41px;
+      &::before {
+        width: 21.56px;
+        height: 29.99px;
+        transform: translateX(-46px) scale(1.5);
+      }
     }
     &__svg {
       width: 22px;
