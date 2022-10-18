@@ -1,5 +1,5 @@
 .about {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 1354px;
   margin-left: auto;
   margin-right: auto;
@@ -7,7 +7,7 @@
   &__layout {
     margin-left: auto;
     margin-right: auto;
-    min-width: 320px;
+    min-width: 280px;
     max-width: 1354px;
     display: flex;
     flex-direction: column;
@@ -166,11 +166,13 @@
 
 @media screen and (min-width: 1354px) {
   .about {
-    width: 1354px;
+    max-width: 1354px;
+    width: 100%;
     &__layout {
       padding-left: 91.5px;
       padding-right: 147.5px;
-      width: 1354px;
+      max-width: 1354px;
+      width: 100%;
     }
     &__margin {
       width: 561px;
