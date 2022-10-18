@@ -56,7 +56,16 @@
       </div>
       <form class="modal__forms">
         <label for="name-box" class="details__heading"> Name</label>
-        <input id="name-box" type="text" name="username" class="details" />
+        <input
+          id="name-box"
+          type="text"
+          name="username"
+          class="details"
+          required
+          pattern="^[a-zA-Ząęłśćóżź]+\s[a-zA-Ząęłńśćóżź\-]+(?:\s[a-zA-Ząęłśćóżź]+)?$"
+          title="Here put your full name please"
+          placeholder="Name*"
+        />
         <svg class="details__icon">
           <use xlink:href="./images/sprite.svg#icon-female-student" width="20" height="20"></use>
         </svg>
@@ -66,7 +75,16 @@
           <use xlink:href="./images/sprite.svg#icon-open-book" width="20" height="20"></use>
         </svg>
         <label for="phone-box" class="details__heading"> Telephone</label>
-        <input id="phone-box" type="text" name="telphone-number" class="details" />
+        <input
+          id="phone-box"
+          type="text"
+          name="telphone-number"
+          class="details"
+          required
+          pattern="^[0-9\-\+]{9,12}$"
+          title="Here put your phone number please"
+          placeholder="Phone*"
+        />
         <svg class="details__icon2">
           <use xlink:href="./images/sprite.svg#icon-phone" width="20" height="20"></use>
         </svg>
@@ -85,7 +103,6 @@
   <!-- mobile menu -->
   <div class="mobile-menu js-menu-container" id="mobile-menu">
     <div class="mobile-menu__container">
-     
       <div class="mobile-menu__logo">
         <a href="" class="header__logo">
           <div class="logo">
@@ -100,7 +117,6 @@
             ><span class="mobile-menu__logo--style1">english</span>
           </div>
         </a>
-       
       </div>
       <button type="button" class="mobile-menu__close-button js-close-menu">
         <svg class="mobile-menu__close-button--style" width="15" height="16">
