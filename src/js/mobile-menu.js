@@ -24,7 +24,16 @@
       document.querySelector(targetElement).scrollIntoView({
         behavior: 'smooth',
       });
-      toggleMenu();
+      navLinks.forEach(el =>
+        el.addEventListener('click', e => {
+          e.preventDefault();
+          let targetElement = el.getAttribute('href');
+          document.querySelector(targetElement).scrollIntoView({
+            behavior: 'smooth',
+          });
+          window.innerWidth < 1314 ? toggleMenu() : '';
+        }),
+      );
     }),
   );
   modalBtn.forEach(el =>
