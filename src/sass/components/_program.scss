@@ -7,6 +7,10 @@
 
 .program {
   background-color: vars.getColor('primary');
+  background-image: url(/images/mobile-our-program.jpg);
+  background-size: 156px 137px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   padding: 50px 0 0 94px;
   &__container {
     margin: 0 auto;
@@ -43,6 +47,18 @@
     letter-spacing: 0.08em;
     color: vars.getColor('accent');
     padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    &::before {
+      display: block;
+      content: '';
+      border-top: 2px solid;
+      border-color: vars.getColor('accent');
+      width: 14px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
   &__description {
     font-size: 12px;
@@ -70,23 +86,15 @@
       border-left: 1px solid #ffffff;
     }
   }
-  &__figure {
-    overflow: hidden;
-    margin-top: -46px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__image {
-    width: 176px;
-    height: 137px;
-    position: relative;
-    overflow: hidden;
-  }
 }
 
 @media screen and (min-width: vars.getThreshold('tablet')) and (max-width: (vars.getThreshold('desktop') - 1px)) {
   .program {
     padding-left: 20px;
+    background-image: url(/images/tablet-our-program.jpg);
+    background-size: 384px 280px;
+    background-repeat: no-repeat;
+    background-position: right 740px;
     &__steps-list {
       padding-left: 57px;
     }
@@ -105,15 +113,6 @@
     &__item {
       width: 176px;
     }
-    &__figure {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: -160px;
-    }
-    &__image {
-      width: 384px;
-      height: 280px;
-    }
   }
 }
 
@@ -121,6 +120,10 @@
   .program {
     height: 1237px;
     padding-top: 120px;
+    background-image: url(/images/desktop-our-program.jpg);
+    background-size: 580px 502px;
+    background-repeat: no-repeat;
+    background-position: left 760px;
     &__container {
       max-width: 1240px;
     }
@@ -166,6 +169,12 @@
       line-height: 1.65;
       letter-spacing: 0.08em;
       margin-bottom: 10px;
+      gap: 14px;
+      &::before {
+        width: 18px;
+        margin-top: 16px;
+        border-top: 3px solid #ff6b09;
+      }
     }
     &__description {
       font-weight: 500;
@@ -173,15 +182,27 @@
       line-height: 1.55;
       padding-right: 10px;
     }
-    &__figure {
-      position: absolute;
-      left: 0;
-      margin-left: -160px;
-      margin-top: -108px;
-    }
-    &__image {
-      width: 683px;
-      height: 502px;
-    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .program {
+    background-image: url(/images/mobile-our-programx2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .program {
+    background-image: url(/images/tablet-our-programx2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .program {
+    background-image: url(/images/desktop-our-programx2.jpg);
   }
 }
