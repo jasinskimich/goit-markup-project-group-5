@@ -122,12 +122,11 @@
     height: 1237px;
     padding-top: 120px;
     &__container {
-      max-width: 1354px;
+      max-width: 1240px;
     }
     &__steps-list {
       display: flex;
       border-top: 1px solid #ffffff;
-      padding-right: 30px;
       gap: 30px;
     }
     &__item-list {
@@ -137,7 +136,7 @@
     &__step {
       border-left: none;
       padding: 0;
-      width: 200px;
+      width: 240px;
       padding-top: 60px;
       &::before {
         transform: translateY(-66px);
