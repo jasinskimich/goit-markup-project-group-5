@@ -10,8 +10,8 @@
   background-image: url(/images/mobile-our-program.jpg);
   background-size: 156px 137px;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  padding: 50px 0 0 94px;
+  background-position: max(242px, 100%) 100%;
+  padding: 50px 0 60px 94px;
   &__container {
     margin: 0 auto;
   }
@@ -94,7 +94,7 @@
     background-image: url(/images/tablet-our-program.jpg);
     background-size: 384px 280px;
     background-repeat: no-repeat;
-    background-position: right 740px;
+    background-position: min(100%, calc(50% + 192px)) 740px;
     &__steps-list {
       padding-left: 57px;
     }
@@ -123,7 +123,7 @@
     background-image: url(/images/desktop-our-program.jpg);
     background-size: 580px 502px;
     background-repeat: no-repeat;
-    background-position: left 760px;
+    background-position: calc(50% - 397px) 760px;
     &__container {
       max-width: 1240px;
     }

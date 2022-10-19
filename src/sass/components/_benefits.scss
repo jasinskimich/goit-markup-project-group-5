@@ -48,7 +48,8 @@
 
 @media all and (min-width: vars.getThreshold('tablet')) {
   .benefits {
-    padding-top: 50px;
+    padding-top: 51px;
+    margin-top: -1px;
     background: linear-gradient(
       to bottom,
       vars.getColor('primary') 0,
