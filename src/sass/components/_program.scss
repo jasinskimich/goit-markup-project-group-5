@@ -88,6 +88,12 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .program {
+    background-image: url(/images/mobile-our-programx2.jpg);
+  }
+}
+
 @media screen and (min-width: vars.getThreshold('tablet')) and (max-width: (vars.getThreshold('desktop') - 1px)) {
   .program {
     padding-left: 20px;
@@ -114,6 +120,11 @@
       width: 176px;
     }
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .program {
+      background-image: url(/images/tablet-our-programx2.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: vars.getThreshold('desktop')) {
@@ -121,9 +132,9 @@
     height: 1237px;
     padding-top: 120px;
     background-image: url(/images/desktop-our-program.jpg);
-    background-size: 580px 502px;
+    background-size: 759px 502px;
     background-repeat: no-repeat;
-    background-position: calc(50% - 397px) 760px;
+    background-position: calc(50% - 536px) 760px;
     &__container {
       max-width: 1240px;
     }
@@ -183,10 +194,9 @@
       padding-right: 10px;
     }
   }
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .program {
-    background-image: url(/images/desktop-our-programx2.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .program {
+      background-image: url(/images/desktop-our-programx2.jpg);
+    }
   }
 }
