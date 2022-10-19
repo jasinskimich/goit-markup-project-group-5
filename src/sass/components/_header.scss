@@ -25,7 +25,7 @@
   &__nav {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     display: flex;
     gap: 50px;
     display: none;
@@ -46,7 +46,7 @@
   display: flex;
   font-weight: 800;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.23;
   letter-spacing: 0.04em;
   &--style1 {
     color: vars.getColor('primary');
@@ -63,7 +63,7 @@
   &--bottom {
     font-weight: 700;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
@@ -76,13 +76,13 @@
     justify-content: center;
     font-weight: 800;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 1.23;
     letter-spacing: 0.04em;
   }
   &--modal-bottom {
     font-weight: 700;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     display: flex;
@@ -100,7 +100,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     letter-spacing: 0.14em;
     display: none;
     &:focus,
