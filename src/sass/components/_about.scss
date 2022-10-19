@@ -120,7 +120,8 @@
       padding-left: 43px;
       padding-right: 40px;
       flex-direction: row;
-      width: 685px;
+      max-width: 768px;
+      width: 100%;
       margin: 0px;
     }
     &__margin {
