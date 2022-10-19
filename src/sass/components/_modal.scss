@@ -156,10 +156,10 @@
   letter-spacing: 0.08em;
   font-size: 14px;
 }
-input:not(:placeholder-shown):required:invalid {
+input:not(:placeholder-shown):invalid {
   background-color: rgba(152, 0, 0, 0.479);
   transition-duration: 250ms;
 }
-input:not(:placeholder-shown):required:valid {
+input:not(:placeholder-shown):valid {
   background-color: rgba(0, 0, 0, 0);
 }
