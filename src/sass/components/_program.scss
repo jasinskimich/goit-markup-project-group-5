@@ -1,0 +1,192 @@
+@use '../utils/vars' as vars;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.program {
+  background-color: vars.getColor('primary');
+  background-image: url(/images/mobile-our-program.jpg);
+  background-size: 156px 137px;
+  background-repeat: no-repeat;
+  background-position: max(242px, 100%) 100%;
+  padding: 50px 0 60px 94px;
+  &__container {
+    margin: 0 auto;
+  }
+  &__header {
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: white;
+    text-align: left;
+    margin-bottom: 40px;
+    &--small {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      color: white;
+      padding-bottom: 5px;
+    }
+  }
+  &__steps-list {
+    list-style: none;
+  }
+  &__item-list {
+    list-style: none;
+    &--small {
+      list-style: none;
+    }
+  }
+  &__tab {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.08em;
+    color: vars.getColor('accent');
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    &::before {
+      display: block;
+      content: '';
+      border-top: 2px solid;
+      border-color: vars.getColor('accent');
+      width: 14px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  &__description {
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.08em;
+    color: vars.getColor('secondary');
+  }
+  &__item {
+    padding-bottom: 8px;
+  }
+  &__step {
+    padding-bottom: 40px;
+    padding-left: 26px;
+    &::before {
+      width: 12px;
+      height: 12px;
+      background: #ff6b09;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      position: absolute;
+      transform: translateX(-32px);
+    }
+    &:not(:last-child) {
+      border-left: 1px solid #ffffff;
+    }
+  }
+}
+
+@media screen and (min-width: vars.getThreshold('tablet')) and (max-width: (vars.getThreshold('desktop') - 1px)) {
+  .program {
+    padding-left: 20px;
+    background-image: url(/images/tablet-our-program.jpg);
+    background-size: 384px 280px;
+    background-repeat: no-repeat;
+    background-position: min(100%, calc(50% + 192px)) 740px;
+    &__steps-list {
+      padding-left: 57px;
+    }
+    &__container {
+      max-width: vars.getThreshold('tablet');
+    }
+    &__header {
+      font-size: 26px;
+      line-height: 1.31;
+      letter-spacing: 0.03em;
+    }
+    &__item-list {
+      display: flex;
+      gap: 50px;
+    }
+    &__item {
+      width: 176px;
+    }
+  }
+}
+
+@media screen and (min-width: vars.getThreshold('desktop')) {
+  .program {
+    height: 1237px;
+    padding-top: 120px;
+    background-image: url(/images/desktop-our-program.jpg);
+    background-size: 580px 502px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 397px) 760px;
+    &__container {
+      max-width: 1240px;
+    }
+    &__steps-list {
+      display: flex;
+      border-top: 1px solid #ffffff;
+      gap: 30px;
+    }
+    &__item-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__step {
+      border-left: none;
+      padding: 0;
+      width: 240px;
+      padding-top: 60px;
+      &::before {
+        transform: translateY(-66px);
+      }
+      &:not(:last-child) {
+        border-left: none;
+      }
+    }
+    &__header {
+      padding-bottom: 100px;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 1.3;
+      letter-spacing: 0.03em;
+      &--small {
+        margin: 0;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0.93;
+        letter-spacing: 0.08em;
+        padding-bottom: 25px;
+      }
+    }
+    &__tab {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.65;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+      gap: 14px;
+      &::before {
+        width: 18px;
+        margin-top: 16px;
+        border-top: 3px solid #ff6b09;
+      }
+    }
+    &__description {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.55;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .program {
+    background-image: url(/images/desktop-our-programx2.jpg);
+  }
+}

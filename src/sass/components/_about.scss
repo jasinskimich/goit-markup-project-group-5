@@ -1,0 +1,223 @@
+.about {
+  min-width: 280px;
+  max-width: 1354px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  &__layout {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 280px;
+    max-width: 1354px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 21px;
+  }
+  &__margin {
+    max-width: 1354px;
+  }
+  &__heading {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  &__image {
+    width: 243px;
+    height: 305px;
+  }
+  &__name {
+    font-weight: 800;
+    font-size: 19.3413px;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    color: #111518;
+    margin-top: 20px;
+    margin-bottom: 9.67px;
+  }
+  &__border {
+    min-width: 270px;
+    max-width: 640px;
+    border: 0.967066px solid #b9b9b9;
+  }
+  &__list {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 0px;
+    padding-right: 8px;
+    &__icon {
+      list-style: none;
+      float: left;
+    }
+    &__experience {
+      list-style: none;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.06em;
+      color: #111518;
+      margin-bottom: 25px;
+      margin-left: 20px;
+    }
+  }
+  &__icon {
+    width: 16.52px;
+    height: 13.54px;
+    fill: #ff6b09;
+  }
+  &__line {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #ff6b09;
+    margin: 0;
+  }
+  &__description {
+    list-style: none;
+    padding: 0;
+    padding-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__text {
+   
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #b9b9b9;
+  }
+  &__certificate {
+    
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #ff6b09;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about__position {
+    width: 439px;
+  }
+  .about__layout {
+    width: 480px;
+  }
+  .about__margin {
+    width: 439px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    width: 768px;
+    &__layout {
+      padding-left: 43px;
+      padding-right: 40px;
+      flex-direction: row;
+      width: 685px;
+      margin: 0px;
+    }
+    &__margin {
+      width: 284px;
+    }
+    &__heading {
+      
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    &__image {
+      width: 243px;
+      height: 305.58px;
+      margin-right: 41px;
+    }
+    &__name {
+      font-size: 20px;
+      margin-top: 62px;
+    }
+    &__list__experience {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__icon {
+      width: 17.08px;
+      height: 14px;
+    }
+    &__line {
+      line-height: 164.9%;
+    }
+    &__text {
+      
+      font-size: 10px;
+      line-height: 28px;
+    }
+    &__position {
+      width: 405px;
+    }
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .about {
+    max-width: 1354px;
+    width: 100%;
+    &__layout {
+      padding-left: 91.5px;
+      padding-right: 147.5px;
+      max-width: 1354px;
+      width: 100%;
+    }
+    &__margin {
+      width: 561px;
+    }
+    &__heading {
+      font-size: 46px;
+      margin-bottom: 50px;
+    }
+    &__image {
+      width: 530px;
+      height: 667px;
+      margin-right: 31px;
+    }
+    &__name {
+      font-size: 30px;
+      line-height: 35px;
+      margin-top: 107px;
+      margin-bottom: 15px;
+    }
+    &__list {
+      margin-top: 30px;
+      &__experience {
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 50px;
+      }
+    }
+    &__icon {
+      width: 24.41px;
+      height: 20px;
+    }
+    &__description {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    &__certificate {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__position {
+      width: 640px;
+    }
+  }
+}

@@ -10,8 +10,8 @@
   background-repeat: no-repeat;
   width: 100%;
   padding: 50px 20px;
-  min-width: 320px;
-  margin-top: 50px;
+  min-width: 280px;
+  margin-top: 24px;
 }
 .contacts__title {
   font-size: 14px;
@@ -107,24 +107,34 @@ input:not(:placeholder-shown):required:valid {
 }
 @media all and (min-width: vars.getThreshold('tablet')) {
   .contacts {
-    padding: 70px;
+    padding: 50px 0 70px;
     background-position: center;
+    margin-top: 50px;
   }
   .contacts__title {
     font-size: 26px;
     width: 100%;
+    height: auto;
     max-width: 569px;
+    margin-bottom: 30px;
   }
   .contacts__text {
     font-size: 14px;
     max-width: 452px;
+  }
+  .btn {
+    margin-top: 0;
+  }
+  .form {
+    gap: 20px;
   }
 }
 @media all and (min-width: vars.getThreshold('desktop')) {
   .contacts {
     background-image: url('../images/desktop-contactx2.jpg');
     background-size: 1746px 840px;
-    padding-top: 100px;
+    padding: 100px 0 62px;
+    margin-top: 130px;
   }
   .contacts__title {
     font-size: 46px;
@@ -135,7 +145,7 @@ input:not(:placeholder-shown):required:valid {
   }
   .contacts__text {
     font-size: 30px;
-    max-width: 1000px;
+    max-width: 1132px;
     padding: 0;
   }
   .contacts-form {
@@ -154,6 +164,9 @@ input:not(:placeholder-shown):required:valid {
     width: 367px;
     margin-top: 50px;
     font-size: 14px;
+  }
+  .form {
+    gap: 30px;
   }
   @media all and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .contacts {

@@ -1,7 +1,8 @@
 @use '../utils/vars' as vars;
 
 .benefits {
-  min-width: 320px;
+  min-width: 280px;
+  margin-bottom: 50px;
   width: 100%;
   padding: 0 20px;
   background: linear-gradient(
@@ -39,15 +40,16 @@
   }
 }
 
-// @media all and (max-width: (vars.getThreshold('tablet') - 1px)) {
-//   .benefits {
-//     margin-top: -50px;
-//   }
-// }
+@media all and (max-width: (vars.getThreshold('tablet') - 1px)) {
+  .benefits {
+    margin-top: -50px;
+  }
+}
 
 @media all and (min-width: vars.getThreshold('tablet')) {
   .benefits {
-    padding-top: 50px;
+    padding-top: 51px;
+    margin-top: -1px;
     background: linear-gradient(
       to bottom,
       vars.getColor('primary') 0,
@@ -89,6 +91,7 @@
   .benefits {
     padding: 0;
     background: none;
+    margin-top: -199px;
   }
 
   .benefits__title {

@@ -1,0 +1,148 @@
+@import '../utils/vars';
+
+.advantages {
+  &__container {
+    width: 223px;
+    margin: 0 auto 50px;
+  }
+  &__title {
+    display: none;
+  }
+  padding: 20px 0 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__list--item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 69px;
+    align-items: center;
+  }
+  &__block {
+    width: 60px;
+    height: 60px;
+    border: 2px solid getColor('accent');
+    &::after {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 42px;
+      border: 2px solid white;
+      background-color: white;
+      position: relative;
+      top: -45px;
+      left: 55px;
+      margin: 0;
+    }
+    &--icon {
+      width: 40px;
+      height: 40px;
+      fill: getColor('accent');
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+  }
+  &__text {
+    width: 148px;
+    height: 60px;
+    padding-top: 7px;
+    &--style {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 164.9%;
+      letter-spacing: 0.08em;
+    }
+  }
+  &__text2 {
+    width: 80px;
+    height: 69px;
+    padding-left: 5px;
+  }
+  &__text3 {
+    width: 90px;
+    height: 69px;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1354px) {
+  .advantages {
+    width: 688px;
+    margin: 0 auto;
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__container {
+      width: 688px;
+    }
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .advantages {
+    width: 1314px;
+    margin: 0 auto 40px;
+    &__container {
+      width: 1314px;
+    }
+    &__list {
+      flex-direction: row;
+      gap: 100px;
+    }
+    &__list--item {
+      height: 102px;
+    }
+
+    &__block {
+      width: 100px;
+      height: 102px;
+      &::after {
+        height: 70px;
+        top: -60px;
+        left: 95px;
+      }
+      &--icon {
+        width: 48px;
+        height: 48px;
+        margin-top: 22px;
+        margin-left: 20px;
+      }
+    }
+    &__text {
+      width: 222px;
+      height: 66px;
+      padding-top: 0;
+      position: relative;
+      left: -30px;
+      &--style {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0.08em;
+      }
+    }
+    &__text2 {
+      width: 230px;
+      height: 66px;
+      padding-left: 0px;
+      position: relative;
+      left: -28px;
+    }
+    &__text3 {
+      width: 250px;
+      height: 69px;
+      padding-left: 0px;
+      position: relative;
+      left: -28px;
+    }
+  }
+}
