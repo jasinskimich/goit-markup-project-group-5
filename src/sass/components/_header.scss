@@ -1,4 +1,4 @@
-@import '../utils/vars';
+@use '../utils/vars' as vars;
 
 .header {
   height: 90px;
@@ -25,13 +25,13 @@
   &__nav {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     display: flex;
     gap: 50px;
     display: none;
 
     &--style {
-      color: getColor('secondary');
+      color: vars.getColor('secondary');
       text-decoration: none;
       text-transform: uppercase;
       &:hover,
@@ -46,29 +46,29 @@
   display: flex;
   font-weight: 800;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.23;
   letter-spacing: 0.04em;
   &--style1 {
-    color: getColor('primary');
+    color: vars.getColor('primary');
     padding-right: 3px;
   }
   &--style2 {
-    fill: getColor('accent');
+    fill: vars.getColor('accent');
   }
   &--style3 {
-    color: getColor('primary');
+    color: vars.getColor('primary');
     text-transform: uppercase;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   &--bottom {
     font-weight: 700;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
   &--style4 {
-    color: getColor('accent');
+    color: vars.getColor('accent');
   }
   &--modal {
     display: flex;
@@ -76,13 +76,13 @@
     justify-content: center;
     font-weight: 800;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 1.23;
     letter-spacing: 0.04em;
   }
   &--modal-bottom {
     font-weight: 700;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     display: flex;
@@ -94,13 +94,13 @@
   &__form {
     width: 260px;
     height: 48px;
-    border: 2px solid getColor('accent');
+    border: 2px solid vars.getColor('accent');
     background-color: white;
-    color: getColor('accent');
+    color: vars.getColor('accent');
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     letter-spacing: 0.14em;
     display: none;
     &:focus,
@@ -121,7 +121,7 @@
     &--style {
       &:hover,
       &:active {
-        fill: getColor('accent');
+        fill: vars.getColor('accent');
         cursor: pointer;
       }
     }
@@ -130,10 +130,10 @@
 
 // edycje dla poszczególnych viewportów
 
-@media screen and (min-width: 768px) and (max-width: 1354px) {
+@media screen and (min-width: vars.getThreshold('tablet')) and (max-width: vars.getThreshold('desktop')) {
   .header {
     &__container {
-      width: 768px;
+      width: vars.getThreshold('tablet');
       margin: 0 auto;
     }
     &__links {
@@ -156,7 +156,7 @@
     }
   }
 }
-@media screen and (min-width: 1354px) {
+@media screen and (min-width: vars.getThreshold('desktop')) {
   .header {
     &__nav {
       display: flex;

@@ -24,16 +24,8 @@
       document.querySelector(targetElement).scrollIntoView({
         behavior: 'smooth',
       });
-      navLinks.forEach(el =>
-        el.addEventListener('click', e => {
-          e.preventDefault();
-          let targetElement = el.getAttribute('href');
-          document.querySelector(targetElement).scrollIntoView({
-            behavior: 'smooth',
-          });
-          window.innerWidth < 1314 ? toggleMenu() : '';
-        }),
-      );
+
+      window.innerWidth < 1314 ? toggleMenu() : '';
     }),
   );
   modalBtn.forEach(el =>
@@ -43,7 +35,7 @@
   );
 
   // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 1354px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);

@@ -1,4 +1,4 @@
-@import '../utils/vars';
+@use '../utils/vars' as vars;
 
 .advantages {
   &__container {
@@ -27,7 +27,7 @@
   &__block {
     width: 60px;
     height: 60px;
-    border: 2px solid getColor('accent');
+    border: 2px solid vars.getColor('accent');
     &::after {
       content: '';
       display: block;
@@ -43,7 +43,7 @@
     &--icon {
       width: 40px;
       height: 40px;
-      fill: getColor('accent');
+      fill: vars.getColor('accent');
       margin-top: 8px;
       margin-left: 8px;
     }
@@ -56,7 +56,7 @@
       display: block;
       font-size: 14px;
       font-weight: 700;
-      line-height: 164.9%;
+      line-height: 1.65;
       letter-spacing: 0.08em;
     }
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1354px) {
+@media screen and (min-width: vars.getThreshold('tablet')) and (max-width: vars.getThreshold('desktop')) {
   .advantages {
     width: 688px;
     margin: 0 auto;
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (min-width: 1354px) {
+@media screen and (min-width: vars.getThreshold('desktop')) {
   .advantages {
     width: 1314px;
     margin: 0 auto 40px;
@@ -126,7 +126,7 @@
         display: block;
         font-size: 20px;
         font-weight: 700;
-        line-height: 33px;
+        line-height: 1.65;
         letter-spacing: 0.08em;
       }
     }
