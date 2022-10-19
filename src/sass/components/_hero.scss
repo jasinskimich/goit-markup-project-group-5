@@ -15,7 +15,7 @@
   flex-direction: column;
   gap: 30px;
 
-  background-image: url('../images/desktop-hero.png'), url('../images/bg-wave.svg');
+  background-image: url('../images/mobile-hero.png'), url('../images/bg-wave.svg');
   background-size: 208px 177.5px, cover;
   background-repeat: no-repeat;
   background-position: center bottom 50px, left bottom -25px;
@@ -84,8 +84,15 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/mobile-hero@2x.png'), url('../images/bg-wave.svg');
+  }
+}
+
 @media all and (min-width: vars.getThreshold('tablet')) {
   .hero {
+    background-image: url('../images/tablet-hero.png'), url('../images/bg-wave.svg');
     width: vars.getThreshold('tablet');
     max-width: 1354px;
     flex-direction: row;
@@ -119,10 +126,16 @@
       width: 275px;
     }
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('../images/tablet-hero@2x.png'), url('../images/bg-wave.svg');
+    }
+  }
 }
 
 @media all and (min-width: vars.getThreshold('desktop')) {
   .hero {
+    background-image: url('../images/desktop-hero.png'), url('../images/bg-wave.svg');
     width: 1314px;
     max-width: 1680px;
     height: 778px;
