@@ -3,8 +3,14 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  background-image: url('../images/tablet-mobile-contact.jpg');
-  background-color: vars.getColor('primary');
+  background-image: url('../images/tablet-mobile-contact.jpg'),
+    linear-gradient(
+      #00000000 0,
+      #00000000 calc(50% - 384px),
+      vars.getColor('primary') calc(50% - 384px),
+      vars.getColor('primary') calc(50% + 384px),
+      #00000000 calc(50% + 384px)
+    );
   background-position: 80% center;
   background-size: 768px 520px;
   background-repeat: no-repeat;
@@ -91,7 +97,14 @@ input:not(:placeholder-shown):required:valid {
 
 @media all and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: url('../images/tablet-mobile-contactx2.jpg');
+    background-image: url('../images/tablet-mobile-contactx2.jpg'),
+      linear-gradient(
+        #00000000 0,
+        #00000000 calc(50% - 384px),
+        vars.getColor('primary') calc(50% - 384px),
+        vars.getColor('primary') calc(50% + 384px),
+        #00000000 calc(50% + 384px)
+      );
   }
 }
 
@@ -131,7 +144,14 @@ input:not(:placeholder-shown):required:valid {
 }
 @media all and (min-width: vars.getThreshold('desktop')) {
   .contacts {
-    background-image: url('../images/desktop-contactx2.jpg');
+    background-image: url('../images/desktop-contact.jpg'),
+      linear-gradient(
+        #00000000 0,
+        #00000000 calc(50% - 873px),
+        vars.getColor('primary') calc(50% - 873px),
+        vars.getColor('primary') calc(50% + 873px),
+        #00000000 calc(50% + 873px)
+      );
     background-size: 1746px 840px;
     padding: 100px 0 62px;
     margin-top: 130px;
@@ -170,7 +190,14 @@ input:not(:placeholder-shown):required:valid {
   }
   @media all and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .contacts {
-      background-image: url('../images/desktop-contactx2.jpg');
+      background-image: url('../images/desktop-contactx2.jpg'),
+        linear-gradient(
+          #00000000 0,
+          #00000000 calc(50% - 873px),
+          vars.getColor('primary') calc(50% - 873px),
+          vars.getColor('primary') calc(50% + 873px),
+          #00000000 calc(50% + 873px)
+        );
     }
   }
 }
