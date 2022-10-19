@@ -107,7 +107,7 @@
 .is-open {
   transform: translateX(0%);
 }
-@media screen and (min-width: vars.getThreshold('tablet')) and (max-width: 1314px) {
+@media screen and (min-width: vars.getThreshold('tablet')) {
   .mobile-menu {
     &__container {
       width: vars.getThreshold('tablet');
