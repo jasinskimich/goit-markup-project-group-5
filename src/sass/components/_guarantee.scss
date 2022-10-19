@@ -58,7 +58,7 @@
 
 @media all and (min-width: vars.getThreshold('tablet')) {
   .guarantee {
-    max-width: 768px;
+    max-width: vars.getThreshold('tablet');
     text-align: center;
     align-items: center;
     &__bg {

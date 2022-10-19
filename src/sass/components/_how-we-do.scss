@@ -114,7 +114,7 @@
     width: 334px;
   }
   .how-we-do__list {
-    width: 768px;
+    width: vars.getThreshold('tablet');
   }
   .how-we-do__heading {
     font-size: 26px;

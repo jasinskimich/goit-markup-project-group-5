@@ -25,7 +25,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 30px;
-    max-width: 480px;
+    max-width: vars.getThreshold('mobile');
     margin: 0 0 200px 0;
   }
 
@@ -94,7 +94,7 @@
   .hero {
     background-image: url('../images/tablet-hero.png'), url('../images/bg-wave.svg');
     width: vars.getThreshold('tablet');
-    max-width: 1354px;
+    max-width: vars.getThreshold('desktop');
     flex-direction: row;
     justify-content: flex-start;
     padding: 0 40px;
