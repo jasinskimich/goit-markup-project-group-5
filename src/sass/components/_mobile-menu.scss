@@ -15,6 +15,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
+    width: 124px;
     &--style1 {
       color: white;
       padding-right: 3px;
@@ -115,6 +116,7 @@
     &__nav-list {
       text-align: center;
       gap: 30px;
+      width: 280px;
     }
     &__nav-item--style {
       font-size: 26px;
