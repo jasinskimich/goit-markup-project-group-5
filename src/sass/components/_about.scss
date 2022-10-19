@@ -85,33 +85,17 @@
     margin-bottom: 10px;
   }
   &__text {
-   
-    
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
     color: #b9b9b9;
   }
   &__certificate {
-    
-    
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
     text-decoration-line: underline;
     color: #ff6b09;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .about__position {
-    width: 439px;
-  }
-  .about__layout {
-    width: 480px;
-  }
-  .about__margin {
-    width: 439px;
   }
 }
 
@@ -122,14 +106,12 @@
       padding-left: 43px;
       padding-right: 40px;
       flex-direction: row;
-      width: 685px;
       margin: 0px;
     }
     &__margin {
       width: 284px;
     }
     &__heading {
-      
       font-size: 26px;
       margin-bottom: 30px;
     }
@@ -154,12 +136,11 @@
       line-height: 164.9%;
     }
     &__text {
-      
       font-size: 10px;
       line-height: 28px;
     }
     &__position {
-      width: 405px;
+      width: 401px;
     }
   }
 }
@@ -194,10 +175,12 @@
     }
     &__list {
       margin-top: 30px;
+      margin-bottom: 30px;
       &__experience {
         font-size: 16px;
         line-height: 19px;
         margin-left: 50px;
+        margin-bottom: 30px;
       }
     }
     &__icon {
@@ -206,18 +189,18 @@
     }
     &__description {
       margin-top: 15px;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
     }
     &__text {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 13px;
     }
     &__certificate {
       font-size: 18px;
       line-height: 28px;
     }
     &__position {
-      width: 640px;
+      width: 554px;
     }
   }
 }
